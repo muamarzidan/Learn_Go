@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+
 func main() {
 	var bilAwal, bilDua, kelipatan, hasilZoomAwal, hasilZoomDua int
 	var operasi string

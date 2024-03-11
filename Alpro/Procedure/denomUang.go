@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+
 func main() {
 	var uang, hasil, sisa int
 	fmt.Scanf("%d", &uang)
