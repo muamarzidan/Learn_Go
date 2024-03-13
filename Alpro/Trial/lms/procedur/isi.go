@@ -7,7 +7,6 @@ func main() {
 	fmt.Scan(&jumlah)
 
 	isiTanki(jumlah, &tanki)
-
 }
 
 func isiTanki(jumlah int, tanki *int) {
