@@ -4,36 +4,64 @@ import "fmt"
 
 
 func main() {
-	var celsius float64
-	fmt.Scan(&celsius)
-	reaumur(celsius)
-	fmt.Print(" ")
-	fahrenheit(celsius)
-	fmt.Print(" ")
-	kelvin(celsius)
-	fmt.Println()
+	var c, hasil float64
+	fmt.Scan(&c)
+	reamur(c, &hasil)
+	fmt.Print(hasil, "R ")
+	fahrenheit(c, &hasil)
+	fmt.Print(hasil, "F ")
+	kelvin(c, &hasil)
+	fmt.Print(hasil, "K")
 }
 
-func reaumur(c float64)  {
-	fmt.Print(c * 0.8)
+func reamur(c float64, hasil *float64) {
+	*hasil = c * 0.8
 }
 
-func fahrenheit(c float64)  {
-	fmt.Print(c * 1.8 + 32)
+func fahrenheit(c float64, hasil *float64) {
+	*hasil = c * 1.8 + 32
 }
 
-func kelvin(c float64)  {
-	fmt.Print(c + 273.15)
+func kelvin (c float64, hasil *float64) {
+	*hasil = c + 273.15
 }
 
-// func reaumur(c float64) float64 {
-// 	return c * 0.8
-// }
+//PSEUDOCODE
 
-// func fahrenheit(c float64) float64 {
-// 	return c * 1.8 + 32
-// }
+// program main
 
-// func kelvin(c float64) float64 {
-// 	return c + 273.15
-// }
+// kamus 
+// 	c, hasil : real
+
+// algoritma
+// 	input(c)
+// 	reaumur(c, hasil)
+// 	output(hasil, "R ")
+// 	fahrenheit(c, hasil)
+// 	output(hasil, "F ")
+// 	kelvin(c, hasil)
+// 	output(hasil, "K")
+
+// endprogram
+
+// procedure reaumur(in c:real, in/out hasil:real)
+
+// algoritma
+// 	output(c * 0.8)
+
+// endprocedure
+
+// procedure fahrenheit(in c:real, in/out hasil:real)
+
+// algoritma
+// 	output(c * 1.8 + 32)
+
+// endprocedure
+
+// procedure kelvin(in c:real, in/out hasil:real)
+
+// algoritma
+// 	output(c + 273.15)
+
+// endprocedure
+

@@ -31,6 +31,7 @@ func zoomOut(bilAwal, bilDua, kelipatan int, hasilZoomAwal *int, hasilZoomDua *i
 // PSEUDOCODE
 
 // program main
+
 // kamus
 // 	bilAwal, bilDua, kelipatan, hasilZoomAwal, hasilZoomDua : integer
 // 	operasi : string
@@ -45,7 +46,8 @@ func zoomOut(bilAwal, bilDua, kelipatan int, hasilZoomAwal *int, hasilZoomDua *i
 
 // enedprogram
 
-// procedure zoomIn(in bilAwal, bilDua, kelipatan : integer, in\out hasilZoomAwal : integer, in\out hasilZoomDua : integer)
+
+// procedure zoomIn(in bilAwal, bilDua, kelipatan : integer, in\out hasilZoomAwal, hasilZoomDua : integer)
 // {IS : initial state terdefinisi adalah bilAwal, bilDua, dan kelipatan dengan bilangan bulat positif}
 // {FS : final state terdefinisi adalah hasilZoomAwal dan hasilZoomDua dengan bilangan bulat positif}
 
@@ -56,7 +58,8 @@ func zoomOut(bilAwal, bilDua, kelipatan int, hasilZoomAwal *int, hasilZoomDua *i
 
 // endprocedure
 
-// procedure zoomOut(in bilAwal, bilDua, kelipatan : integer, in\out hasilZoomAwal : integer, in\out hasilZoomDua : integer)
+
+// procedure zoomOut(in bilAwal, bilDua, kelipatan : integer, in\out hasilZoomAwal, hasilZoomDua : integer)
 // {IS : initial state terdefinisi adalah bilAwal, bilDua, dan kelipatan dengan bilangan bulat positif}
 // {FS : final state terdefinisi adalah hasilZoomAwal dan hasilZoomDua dengan bilangan bulat positif}
 

@@ -5,8 +5,8 @@ import "fmt"
 
 func main() {
 	var x, y int
-	fmt.Scan(&x, &y)
 
+	fmt.Scan(&x, &y)
 	for x != y {
 		mengurutkan(&x, &y)
 		fmt.Scan(&x, &y)
@@ -14,14 +14,15 @@ func main() {
 }
 
 func mengurutkan(x, y *int) {
+	var temp int
+
 	if *x > *y {
-		*x, *y = *y, *x
-	} else {
-		*x, *y = *x, *y
+		temp := *x
+		*x = *y
+		*y = temp
 	}
 	fmt.Println(*x, *y)
 }
-
 
 
 // PSEUDOCODE
@@ -41,18 +42,19 @@ func mengurutkan(x, y *int) {
 // endprogram
 
 
-// procedure mengurutkan(in/out x : integer, in/out y : integer)
+// procedure mengurutkan(in/out x, y : integer)
 
 // {IS : initial state terdefinisi adalah x dan y dengan bilangan bulat positif}
 // {FS : final state terdefinisi adalah x dan y dengan bilangan bulat positif}
 
 // kamus
+// 	temp : integer
 
 // algoritma
 // 	if x > y then
-// 		x, y <- y, x
-// 	else
-// 		x, y <- x, y
+// 		temp <- x
+// 		x <- y
+// 		y <- temp
 // 	endif
 // 	output(x, y)
 

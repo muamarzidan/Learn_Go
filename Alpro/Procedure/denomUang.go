@@ -33,6 +33,7 @@ func denomUang(hasil *int, sisa *int, uang int) {
 
 
 // PSEUDOCODE
+
 // program main
 
 // kamus
@@ -42,9 +43,10 @@ func denomUang(hasil *int, sisa *int, uang int) {
 // 	input(uang)
 // 	denomUang(hasil, sisa, uang)
 
-// enedprogram
+// endprogram
 
-// procedure denomUang(in uang : integer, in/out hasil : integer, in/out sisa : integer)
+
+// procedure denomUang(in/out hasil, sisa : integer, in uang : integer)
 
 // {IS : initial state terdefinisi adalah uang dengan bilangan bulat positif}
 // {FS : final state terdefinisi adalah hasil dan sisa dengan bilangan bulat positif}
