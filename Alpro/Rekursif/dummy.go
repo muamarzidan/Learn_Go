@@ -31,15 +31,3 @@ func totalJumlah(n int) int {
 		return n + totalJumlah(n-1)
 	}
 }
-
-tracing
-masukan 7
-totalJumlah(7)
-7 + totalJumlah(6)
-7 + 6 + totalJumlah(5)
-7 + 6 + 5 + totalJumlah(4)
-7 + 6 + 5 + 4 + totalJumlah(3)
-7 + 6 + 5 + 4 + 3 + totalJumlah(2)
-7 + 6 + 5 + 4 + 3 + 2 + totalJumlah(1)
-7 + 6 + 5 + 4 + 3 + 2 + 1
-28
