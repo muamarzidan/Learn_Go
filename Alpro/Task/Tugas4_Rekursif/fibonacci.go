@@ -34,17 +34,17 @@ func main() {
 // endprogram
 
 
-function fibonacci(n : integer) -> integer
-{mengembalikan bilangan fibonacci ke-n}
+// function fibonacci(n : integer) -> integer
+// {mengembalikan bilangan fibonacci ke-n}
 
-kamus
-	n : integer
+// kamus
+// 	n : integer
 
-algoritma
-	if n <= 1 then
-		return n
-	endif
-	return fibonacci(n-1) + fibonacci(n-2)
+// algoritma
+// 	if n <= 1 then
+// 		return n
+// 	endif
+// 	return fibonacci(n-1) + fibonacci(n-2)
 
-endfunction
+// endfunction
 

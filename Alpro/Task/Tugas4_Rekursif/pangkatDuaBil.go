@@ -18,32 +18,32 @@ func pangkatDua(bil, pangkat int) int {
 	}
 }
 
-PSEUDOCODE
+// PSEUDOCODE
 
-program main
+// program main
 
-kamus
-	bil1, bil2 : integer
+// kamus
+// 	bil1, bil2 : integer
 
-algoritma
-	input(bil1, bil2)
-	output(pangkatDua(bil1, bil2))
+// algoritma
+// 	input(bil1, bil2)
+// 	output(pangkatDua(bil1, bil2))
 
-endprogram
+// endprogram
 
 
-function pangkatDua(bil, pangkat : integer) -> integer
-{mengembalikan bilangan hasil dari bilangan yang di pangkatkan dengan pangkat tertentu}
+// function pangkatDua(bil, pangkat : integer) -> integer
+// {mengembalikan bilangan hasil dari bilangan yang di pangkatkan dengan pangkat tertentu}
 
-kamus
-	bil, pangkat : integer
+// kamus
+// 	bil, pangkat : integer
 
-algoritma
-	if bil = 0 then
-		return 0
-	else if pangkat = 0 then
-		return 1
-	else
-		return bil * pangkatDua(bil, pangkat-1)
+// algoritma
+// 	if bil = 0 then
+// 		return 0
+// 	else if pangkat = 0 then
+// 		return 1
+// 	else
+// 		return bil * pangkatDua(bil, pangkat-1)
 
-endfunction
+// endfunction
