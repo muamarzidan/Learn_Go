@@ -14,7 +14,7 @@ func rekursifGanjil(n int) {
 	}
 	if n%2 == 1 {
 		rekursifGanjil(n - 1)
-		fmt.Print(n)
+		fmt.Print(n, " ")
 	} else {
 		rekursifGanjil(n - 1)
 	}
@@ -31,7 +31,6 @@ func rekursifGanjil(n int) {
 // algoritma
 // 	input(n)
 // 	rekursifGanjil(n)
-
 // endprogram
 
 
@@ -42,10 +41,10 @@ func rekursifGanjil(n int) {
 // algoritma
 // 	if n <= 0 then
 // 		return 
-// 	end if
+// 	endif
 // 	if n mod 2 = 1 then
 // 		rekursifGanjil(n - 1)
-// 		output(n)
+// 		output(n, " ")
 // 	else
 // 		rekursifGanjil(n - 1)
 // 	endif
