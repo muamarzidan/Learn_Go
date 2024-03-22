@@ -35,8 +35,8 @@ func rekursifGanjil(n int) {
 
 
 // procedure rekursifGanjil(in n : integer)
-// {IS : inisial state adalah n, nilai n adalah bilangan integer}
-// {FS : -}
+// {IS : inisial state adalah n, nilai n adalah bilangan integer dari program main}
+// {FS : - ,  sebenarnya final state tidak ada, fungsi ini hanya menampilkan output saja}	
 
 // algoritma
 // 	if n <= 0 then

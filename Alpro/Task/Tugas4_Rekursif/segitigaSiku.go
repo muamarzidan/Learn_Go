@@ -23,34 +23,35 @@ func main() {
 
 // PSEUDOCODE
 
-// program main
+program main
 
-// kamus
-// 	N : integer
+kamus
+	N : integer
 
-// algoritma
-// 	input(N)
-// 	segitigaSiku(N, 1)
+algoritma
+	input(N)
+	segitigaSiku(N, 1)
 
-// endprogram
+endprogram
 
-// procedure segitigaSiku(in N : integer, in/out N2 : integer)
-// {IS : inisial state adalah N dan N2, nilai N adalah bilangan integer yang akan dicari faktornya, nilai N2 adalah 1}
-// {FS : final state adalah N2 yang sudah bertambah 1 jika N2 lebih kecil dari N, dan N2 yang sudah mencapai N jika N2 lebih besar dari N}
 
-// algoritma
-// 	if N2 > N then
-// 		return
-// 	endif
+procedure segitigaSiku(in N : integer, in/out N2 : integer)
+{IS : inisial state adalah N dan N2, nilai N adalah bilangan integer yang akan dicari faktornya, nilai N2 adalah 1}
+{FS : final state adalah N2 yang sudah bertambah 1 jika N2 lebih kecil dari N, dan N2 yang sudah mencapai N jika N2 lebih besar dari N}
 
-// 	for j <- 1 to N2 do
-// 		output("*", " ")
-// 	endfor
-// 	output()
-// 	N2 <- N2 + 1
-// 	segitigaSiku(N, N2)
+algoritma
+	if N2 > N then
+		return
+	endif
 
-// endprocedure
+	for j <- 1 to N2 do
+		output("*", " ")
+	endfor
+	output()
+	N2 <- N2 + 1
+	segitigaSiku(N, N2)
+
+endprocedure
 
 
 
