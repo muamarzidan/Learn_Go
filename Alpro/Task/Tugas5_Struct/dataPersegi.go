@@ -21,13 +21,11 @@ func main() {
 }
 
 func isiData(persegi *rectangle) {
-
 	fmt.Scan(&persegi.length, &persegi.width, &persegi.color)
 	
 }
 
 func hitung(persegi *rectangle) {
-
 	persegi.property.area = persegi.length * persegi.width
 }
 
