@@ -106,7 +106,7 @@ func main() {
 		kategori: [4]string{"Basic", "Middle", "Advance", "Expert"},
 	}
 
-	fmt.Printlxn("Data Buku :")
+	fmt.Println("Data Buku :")
 	fmt.Println("Title : ", buku1.title)
 	fmt.Println("Author : ", buku1.author)
 	fmt.Println("Page : ", buku1.page)

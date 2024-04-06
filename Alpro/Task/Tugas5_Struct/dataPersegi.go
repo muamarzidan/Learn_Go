@@ -30,47 +30,47 @@ func hitung(persegi *rectangle) {
 }
 
 
-PSEUDOCODE
+// PSEUDOCODE
 
-type rectangle <
-	length, width : integer
-	color : string
-	property : geometry >
+// program main
 
-type geometry <
-	area, perimeter : integer >
+// kamus
+// 	type rectangle <
+// 	length, width : integer
+// 	color : string
+// 	property : geometry >
 
-program main
+// 	type geometry <
+// 	area, perimeter : integer >
 
-kamus
-	data : rectangle
+// 	data : rectangle
 
-algoritma
-	isiData(data)
-	hitung(data)
-	output(data.property.area, data.property.perimeter)
+// algoritma
+// 	isiData(data)
+// 	hitung(data)
+// 	output(data.property.area, data.property.perimeter)
 
-endprogram
-
-
-function isiData(in/out persegi : rectangle) 
-{IS : data persegi telah siap pada piranti masukan (panjang, lebar, warna), untuk mengisi data persegi}
-{FS : data persegi telah terisi dari data masukan}
-kamus
-
-algoritma
-	input(persegi.length, persegi.width, persegi.color)
-
-endfunction
+// endprogram
 
 
-function hitung(in/out persegi : rectangle)
-{IS : terdefinisi data persegi (panjang, lebar, warna), untuk menghitung luas dan keliling persegi}
-{FS : terhitung luas dan keliling persegi}
-kamus
+// function isiData(in/out persegi : rectangle) 
+// {IS : data persegi telah siap pada piranti masukan (panjang, lebar, warna), untuk mengisi data persegi}
+// {FS : data persegi telah terisi dari data masukan}
+// kamus
 
-algoritma
-	persegi.property.area <- persegi.length * persegi.width
+// algoritma
+// 	input(persegi.length, persegi.width, persegi.color)
 
-endfunction
+// endfunction
+
+
+// function hitung(in/out persegi : rectangle)
+// {IS : terdefinisi data persegi (panjang, lebar, warna), untuk menghitung luas dan keliling persegi}
+// {FS : terhitung luas dan keliling persegi}
+// kamus
+
+// algoritma
+// 	persegi.property.area <- persegi.length * persegi.width
+
+// endfunction
 

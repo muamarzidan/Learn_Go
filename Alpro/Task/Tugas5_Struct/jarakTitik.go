@@ -33,12 +33,11 @@ func akar(x float64) float64 {
 
 // PSEUDOCODE
 
-// type titik <
-// 	x, y : real >
-
-// program main 
+program main 
 
 // kamus 
+// 	type titik <
+// 	x, y : real >
 // 	p1, p2 : titik
 
 // algoritma
@@ -46,6 +45,7 @@ func akar(x float64) float64 {
 // 	output(jarak(p1, p2))
 
 // endprogram
+
 
 
 // function jarak(p1, p2 : titik) -> real
@@ -56,10 +56,10 @@ func akar(x float64) float64 {
 // algoritma
 // 	dx <- p1.x - p2.x
 // 	dy <- p1.y - p2.y
-
 // 	return akar(dx*dx + dy*dy)
 
 // endfunction
+
 
 
 // function akar(x : real) -> real
@@ -71,9 +71,8 @@ func akar(x float64) float64 {
 // algoritma
 // 	akar <- 1
 // 	for i <- 0 to 100 do
-// 		akar <- 0.5 * (akar + x/akar)
+// 		akar <- 0.5 * (akar + x div akar)
 // 	endfor
-
 // 	return akar
 
 // endfunction
