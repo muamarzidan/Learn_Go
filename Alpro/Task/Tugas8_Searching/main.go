@@ -2,7 +2,7 @@ package main
 import "fmt"
 
 const POKEMONMAX = 1000
-const NMAX = 3
+const NMAX = 5
 
 
 type pokemon struct  {
@@ -110,94 +110,173 @@ func cariNamaOrangPalingSedikitPokemon (data tasPokemon) string {
 
 // PSEUDOCODE 
 
-// constant POKEMONMAX : integer = 5
+constant NMAX : integer = 5
+constant POKEMONMAX : integer = 1000
 
-// type pokemon <
-// 	nama : string
-// 	namaPokemon : string
-// 	jumlahPokemon : integer
-// 	kelangkaan : string
-// 	elemen : string
-// >
+type pokemon <
+	nama : string
+	namaPokemon : string
+	jumlahPokemon : integer
+	kelangkaan : string
+	elemen : string
+>
 
-// type tasPokemon : array [0...POKEMONMAX-1] of pokemon
-
-// program main 
-
-// kamus 
-// 	data : tasPokemon
-// 	index : integer
-
-// algoritma
-// 	for i <- 0 to POKEMONMAX-1 do
-// 		output("Silahkan masukan data orang ke", i+1)
-// 		output("Masukan nama anda : ")
-// 		input(data[i].nama)
-// 		output("Masukan nama pokemon yang diperoleh : ")
-// 		input(data[i].namaPokemon)
-// 		output("Masukan jumlah pokemon yang diperoleh : ")
-// 		input(data[i].jumlahPokemon)
-// 		output("Masukan tingkat kelangkaan pokemon : ")
-// 		input(data[i].kelangkaan)
-// 		output("Masukan elemen pokemon : ")
-// 		input(data[i].elemen)
-// 		output("\n")
-// 	endfor
-
-// 	index <- cariPalingBanyakPokemon(data)
-// 	output("Selamat kepada :", data[index].nama, "telah mendapatkan pokemon paling banyak dengan jumlah pokemon sebanyak :", data[index].jumlahPokemon)
-// 	output("------Dengan Spesifikasi Pokemon------")
-// 	output("Nama Pokemon :", data[index].namaPokemon)
-// 	output("Tingkat Kelangkaan :", data[index].kelangkaan)
-// 	output("Elemen Pokemon :", data[index].elemen)
-// 	output("---------------------------------------")
-
-// 	index <- cariPalingSedikitPokemon(data)
-// 	output("Namun sayang sekali, kepada :", data[index].nama, "telah mendapatkan pokemon paling sedikit dengan jumlah pokemon sebanyak :", data[index].jumlahPokemon)
-
-// endprogram
-
-// function cariPalingBanyakPokemon (data : tasPokemon) -> integer
-// { pada fungsi ini akan mencari data orang yang mendapatkan pokemon paling banyak }
-
-// kamus 
-// 	max, index, i : integer
-
-// algoritma
-// 	max <- 0
-// 	index <- 0
-// 	for i <- 0 to POKEMONMAX-1 do
-// 		if data[i].jumlahPokemon > max then
-// 			max <- data[i].jumlahPokemon
-// 			index <- i
-// 		endif
-// 	endfor
-// 	return index
-// endfunction
+type tasPokemon : array [0...POKEMONMAX-1] of pokemon
 
 
-// function cariPalingSedikitPokemon (data : tasPokemon) -> integer
-// { pada fungsi ini akan mencari data orang yang mendapatkan pokemon paling sedikit }
+program main 
 
-// kamus
-// 	min, index, i : integer
+kamus 
+	data : tasPokemon
+	index : integer
 
-// algoritma
-// 	min <- data[0].jumlahPokemon
-// 	index <- 0
-// 	for i <- 0 to POKEMONMAX-1 do
-// 		if data[i].jumlahPokemon < min then
-// 			min <- data[i].jumlahPokemon
-// 			index <- i
-// 		endif
-// 	endfor
-// 	return index
+algoritma
+	output("==================================================")
+	output("= Tulis Tingkat Kelangkaan : rare, medium, low   =")
+	output("= Tulis Elemen : Listrik, Tanah, Api, Air, Angin =")
+	output("==================================================")
+	output("\n")
 
-// endfunction
+	inputData(data)
+
+	output("Selamat kepada :", cariNamaOrangPalingBanyakPokemon(data), "telah mendapatkan pokemon paling banyak dengan jumlah pokemon sebanyak :", data[cariPalingBanyakPokemon(data)].jumlahPokemon)
+	output("------Dengan Spesifikasi Pokemon------")
+	output("Nama Pokemon :", data[cariPalingBanyakPokemon(data)].namaPokemon)
+	output("Tingkat Kelangkaan :", data[cariPalingBanyakPokemon(data)].kelangkaan)
+	output("Elemen Pokemon :", data[cariPalingBanyakPokemon(data)].elemen)
+	output("---------------------------------------")
+
+	output("Namun sayang sekali, kepada :", cariNamaOrangPalingSedikitPokemon(data), "telah mendapatkan pokemon paling sedikit dengan jumlah pokemon sebanyak :", data[cariPalingSedikitPokemon(data)].jumlahPokemon)
+endprogram
 
 
+procedure inputData (data : tasPokemon)
+{
+	pada procedure ini, user akan diminta untuk memasukkan data sebanyak NMAX kali, NMAX ini sebagai batas maksimal input data
+}
+
+kamus
+	i : integer
+
+algoritma	
+	for i <- 0 to NMAX-1 do
+		output("Silahkan masukan data orang ke", i+1)
+		output("Masukan nama anda : ")
+		input(data[i].nama)
+		output("Masukan nama pokemon yang diperoleh : ")
+		input(data[i].namaPokemon)
+		output("Masukan jumlah pokemon yang diperoleh : ")
+		input(data[i].jumlahPokemon)
+		output("Masukan tingkat kelangkaan pokemon : ")
+		input(data[i].kelangkaan)
+		output("Masukan elemen pokemon : ")
+		input(data[i].elemen)
+		output("\n")
+
+		if data[i].jumlahPokemon > POKEMONMAX then
+			data[i].jumlahPokemon <- POKEMONMAX
+		endif
+	endfor
+
+endprocedure
 
 
+function cariPalingBanyakPokemon (data : tasPokemon) -> integer
+{
+	pada fungsi ini, akan dicari data orang yang mendapatkan pokemon paling banyak
+}
+
+kamus
+	max : integer
+	idx : integer
+	i : integer
+
+algoritma
+	max <- data[0].jumlahPokemon
+	idx <- 0
+	for i <- 0 to NMAX-1 do
+		if data[i].jumlahPokemon > max then
+			max <- data[i].jumlahPokemon
+			idx <- i
+		endif
+	endfor
+	return idx
+
+endfunction
+
+
+function cariNamaOrangPalingBanyakPokemon (data : tasPokemon) -> string
+{
+	pada fungsi ini, akan dicari nama orang yang mendapatkan pokemon paling banyak 
+}
+
+kamus
+	max : integer
+	nama : string
+	i : integer
+
+algoritma
+	max <- data[0].jumlahPokemon
+	nama <- data[0].nama
+	for i <- 0 to NMAX-1 do
+		if data[i].jumlahPokemon > max then
+			max <- data[i].jumlahPokemon
+			nama <- data[i].nama
+		endif
+	endfor
+	return nama
+
+endfunction
+
+
+function cariPalingSedikitPokemon (data : tasPokemon) -> integer
+{
+	pada fungsi ini, akan dicari data orang yang mendapatkan pokemon paling sedikit
+}
+
+kamus
+	min : integer
+	idx : integer
+	i : integer
+
+algoritma
+	min <- data[0].jumlahPokemon
+	idx <- 0
+	for i <- 0 to NMAX-1 do
+		if data[i].jumlahPokemon < min then
+			min <- data[i].jumlahPokemon
+			idx <- i
+		endif
+	endfor
+	return idx
+
+endfunction
+
+
+function cariNamaOrangPalingSedikitPokemon (data : tasPokemon) -> string
+{
+	pada fungsi ini, akan dicari nama orang yang mendapatkan pokemon paling sedikit
+}
+
+kamus
+	min : integer
+	nama : string
+	i : integer
+
+algoritma
+	min <- data[0].jumlahPokemon
+	nama <- data[0].nama
+	for i <- 0 to NMAX-1 do
+		min <- data[i].jumlahPokemon
+		nama <- data[i].nama
+		if data[i].jumlahPokemon < min then
+			min <- data[i].jumlahPokemon
+			nama <- data[i].nama
+		endif
+	endfor
+	return nama
+
+endfunction
 
 
 
