@@ -557,6 +557,7 @@ func editDataBank(worldBank *WorldBank) {
 	}
 }
 
+// deleteDataBank function to delete the bank data
 func deleteDataBank(worldBank *WorldBank) {
 	var bankIndex int
 	var found bool
@@ -707,6 +708,7 @@ func customerMenu(customer *Customer) {
 		case 1:
 			viewSaldo(customer)
 		case 2:
+			// Implementasi fungsi transfer di sini
 			transfer(customer)
 		case 3:
 			return
