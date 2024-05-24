@@ -7,7 +7,7 @@ type titik struct {
 	x, y float64
 }
 
-func main() {
+func soal2() {
 	var p1, p2 titik
 	fmt.Scan(&p1.x, &p1.y, &p2.x, &p2.y)
 	fmt.Println(jarak(p1, p2))
@@ -31,9 +31,10 @@ func akar(x float64) float64 {
 }
 
 
+
 // PSEUDOCODE
 
-program main 
+// program main 
 
 // kamus 
 // 	type titik <

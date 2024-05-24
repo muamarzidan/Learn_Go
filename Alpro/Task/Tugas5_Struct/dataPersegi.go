@@ -13,7 +13,7 @@ type geometry struct {
 	area, perimeter int
 }
 
-func main() {
+func soal1() {
 	var data rectangle
 	isiData(&data)
 	hitung(&data)
@@ -72,5 +72,4 @@ func hitung(persegi *rectangle) {
 // algoritma
 // 	persegi.property.area <- persegi.length * persegi.width
 
-// endfunction
-
+// endfunction	
