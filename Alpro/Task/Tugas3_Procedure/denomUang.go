@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func soal1() {
 	var uang, hasil, sisa int
 	fmt.Scanf("%d", &uang)
 
@@ -31,7 +31,9 @@ func denomUang(hasil *int, sisa *int, uang int) {
 }
 
 
+
 // PSEUDOCODE
+
 // program main
 
 // kamus

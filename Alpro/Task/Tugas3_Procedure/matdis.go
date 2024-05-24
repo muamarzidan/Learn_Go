@@ -1,8 +1,8 @@
 package main
+
 import "fmt"
 
-
-func main()	{
+func soal2()	{
 	var a, b, c, d int
 	fmt.Scan(&a, &b, &c, &d)
 
@@ -10,13 +10,8 @@ func main()	{
 }
 
 func permutasiKombinasi(a, b, c, d int) {
-	permutasiA := permutasi(a, c)
-	kombinasiA := kombinasi(a, c)
-	permutasiB := permutasi(b, d)
-	kombinasiB := kombinasi(b, d)
-
-	fmt.Println(permutasiA, kombinasiA)
-	fmt.Println(permutasiB, kombinasiB)
+	fmt.Println(permutasi(a, c), kombinasi(a, c))
+	fmt.Println(permutasi(b, d), kombinasi(b, d))
 }
 
 func permutasi(n, r int) {

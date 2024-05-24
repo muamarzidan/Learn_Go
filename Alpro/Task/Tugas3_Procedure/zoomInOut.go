@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func soal5() {
 	var bilAwal, bilDua, kelipatan, hasilZoomAwal, hasilZoomDua int
 	var operasi string
 
@@ -26,6 +26,8 @@ func zoomOut(bilAwal, bilDua, kelipatan int, hasilZoomAwal *int, hasilZoomDua *i
 	*hasilZoomDua = bilDua / kelipatan
 	fmt.Println(*hasilZoomAwal, *hasilZoomDua)
 }
+
+
 
 // PSEUDOCODE
 
