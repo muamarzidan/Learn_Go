@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-func main() {
+
+func soal1() {
 	var n int
 	fmt.Scan(&n)
 	rekursifGanjil(n)
@@ -19,6 +20,7 @@ func rekursifGanjil(n int) {
 		rekursifGanjil(n - 1)
 	}
 }
+
 
 
 // PSEUDOCODE

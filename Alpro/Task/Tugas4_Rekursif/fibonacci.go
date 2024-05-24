@@ -12,35 +12,37 @@ func fibonacci(n int) int {
 	}
 }
 
-func main() {
+func soal3() {
 	var n int
 	fmt.Scan(&n)
 	fmt.Println(fibonacci(n))
 }
 
+
+
 // PSEUDOCODE
 
-function fibonacci(n : integer) -> integer
+// function fibonacci(n : integer) -> integer
 
-algoritma
-	if n == 0 then
-		return 0
-	else if n == 1 then
-		return 1
-	else
-		return fibonacci(n-1) + fibonacci(n-2)
-	endif
+// algoritma
+// 	if n == 0 then
+// 		return 0
+// 	else if n == 1 then
+// 		return 1
+// 	else
+// 		return fibonacci(n-1) + fibonacci(n-2)
+// 	endif
 
-endfunction
+// endfunction
 
 
-program main
+// program main
 
-kamus 
-	n : integer
+// kamus 
+// 	n : integer
 
-algoritma
-	input(n)
-	output(fibonacci(n))
+// algoritma
+// 	input(n)
+// 	output(fibonacci(n))
 
-endprogram
+// endprogram

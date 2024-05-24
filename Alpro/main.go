@@ -115,6 +115,32 @@
 // 	output("Grade:", student1.Grade)
 
 
+
+// func cetakPola() {
+// 	var N int
+// 	fmt.Scanln(&N)
+// 	pola(1, N)
+// }
+
+// func pola(baris, n int) int {
+// 	if baris <= n {
+// 		cetakBintang(baris)
+// 		fmt.Println()
+// 		return pola(baris+1, n)
+// 	}
+// 	return 0
+
+// }
+
+// func cetakBintang(jumlah int) {
+// 	if jumlah > 0 {
+// 		fmt.Print("* ")
+// 		cetakBintang(jumlah - 1)
+// 	}
+// }
+
+
+
 package main
 
 import "fmt"
