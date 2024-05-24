@@ -23,28 +23,30 @@ func cekSegitiga(a, b, c int) string {
 	}
 }
 
+
+
 // PSEUDOCODE
 
-program main
-kamus
-	a, b, c : integer
+// program main
+// kamus
+// 	a, b, c : integer
 
-algoritma
-	input(a, b, c)
-	output(cekSegitiga(a, b, c))
+// algoritma
+// 	input(a, b, c)
+// 	output(cekSegitiga(a, b, c))
 
-endprogram
+// endprogram
 
-function cekSegitiga(a, b, c : integer) -> string
-kamus
-	hasil : string
+// function cekSegitiga(a, b, c : integer) -> string
+// kamus
+// 	hasil : string
 
-algoritma
-	if (a + b > c) and (a + c > b) and (b + c > a) then
-		hasil <- "Segitiga"
-	else
-		hasil <- "Bukan Segitiga"
-	endif
-	return hasil
+// algoritma
+// 	if (a + b > c) and (a + c > b) and (b + c > a) then
+// 		hasil <- "Segitiga"
+// 	else
+// 		hasil <- "Bukan Segitiga"
+// 	endif
+// 	return hasil
 
-endfunction
+// endfunction

@@ -30,6 +30,8 @@ func Permutasi(x, y int) int {
 	return Faktorial(x) / Faktorial(x-y)
 }
 
+
+
 // PSEUDOCODE
 
 // program main

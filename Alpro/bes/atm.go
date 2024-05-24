@@ -596,7 +596,7 @@ func deleteDataBank(worldBank *WorldBank) {
 	}
 }
 
-func initializeDummyCustomers() {
+func dummy() {
 	dummyCustomers := []Customer{
 		{accountNumber: 1001, balance: 0, PIN: 1234, NIK: 111111, name: "Dummy1", address: Address{district: "Dist1", city: "City1", province: "Prov1"}, isSuspended: false},
 		{accountNumber: 1002, balance: 0, PIN: 1234, NIK: 111112, name: "Dummy2", address: Address{district: "Dist2", city: "City2", province: "Prov2"}, isSuspended: false},
@@ -617,7 +617,7 @@ func initializeDummyCustomers() {
 }
 
 func mainMenuCustomer() {
-	initializeDummyCustomers()
+	dummy()
 	for {
 		fmt.Println("Menu Customer:")
 		fmt.Println("1. Login")
@@ -661,7 +661,7 @@ func login() {
 		fmt.Println("Nomor rekening atau PIN salah.")
 	}
 
-	fmt.Println("Akun Anda telah diblokir sementara karena terlalu banyak percobaan login.")
+	fmt.Println("Akun sudah masuk ke maksimal login, silakan coba lagi.")
 }
 
 func register() {

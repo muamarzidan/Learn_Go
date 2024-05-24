@@ -16,25 +16,27 @@ func konversiWaktuDetik(jam, menit, detik int) int {
 	return hasil
 }
 
+
+
 // PSEUDOCODE
 
-program main
-kamus
-    jam, menit, detik, hasilKonversi : integer
+// program main
+// kamus
+//     jam, menit, detik, hasilKonversi : integer
 
-algoritma
-    input(jam, menit, detik)
-    hasilKonversi <- konversiWaktuDetik(jam, menit, detik)
-    output("Hasil konversi = ", hasilKonversi, " detik")
+// algoritma
+//     input(jam, menit, detik)
+//     hasilKonversi <- konversiWaktuDetik(jam, menit, detik)
+//     output("Hasil konversi = ", hasilKonversi, " detik")
 
-endprogram
+// endprogram
 
 
-function konversiWaktuDetik(jam, menit, detik : integer) -> integer
-kamus
-    hasil : integer
+// function konversiWaktuDetik(jam, menit, detik : integer) -> integer
+// kamus
+//     hasil : integer
 
-algoritma
-    hasil <- (jam * 3600) + (menit * 60) + detik
-    return hasil
-endfunction
+// algoritma
+//     hasil <- (jam * 3600) + (menit * 60) + detik
+//     return hasil
+// endfunction

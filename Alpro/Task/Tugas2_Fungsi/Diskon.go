@@ -40,7 +40,7 @@ func cekDiskon(belanja int, member bool) float64 {
 // algoritma
 // 	input(belanja)
 // 	hasilDiskon <- cekDiskon(belanja, member)
-// 	output(hasilDiskon) // cara 1
+// 	output(hasilDiskon)
 // endprogram
 
 // function cekDiskon(belanja : integer, member : boolean) -> real
@@ -58,9 +58,3 @@ func cekDiskon(belanja int, member bool) float64 {
 // 	return hasil
 
 // endfunction
-
-
-
-
-
-
