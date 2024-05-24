@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func soal1() {
 	var a, b, c int
 	var hasil string
 

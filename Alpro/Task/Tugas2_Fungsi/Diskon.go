@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 
-func main() {
+func soal2() {
 	var member bool
 	var belanja int
 	var hasil float64

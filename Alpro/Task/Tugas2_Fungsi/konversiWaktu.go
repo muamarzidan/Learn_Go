@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 
-func main() {
+func soal5() {
 	var jam, menit, detik, hasilKonversi int
 	fmt.Scan(&jam, &menit, &detik)
 	hasilKonversi = konversiWaktuDetik(jam, menit, detik)

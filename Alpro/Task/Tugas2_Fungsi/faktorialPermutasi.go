@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func soal3() {
 	var x, y, faktorialX, faktorialY, permutasi int
 
 	fmt.Scan(&x, &y)
