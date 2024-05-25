@@ -110,222 +110,170 @@ func cariNamaOrangPalingSedikitPokemon (data tasPokemon) string {
 
 // PSEUDOCODE 
 
-constant NMAX : integer = 5
-constant POKEMONMAX : integer = 1000
+// constant NMAX : integer = 5
+// constant POKEMONMAX : integer = 1000
 
-type pokemon <
-	nama : string
-	namaPokemon : string
-	jumlahPokemon : integer
-	kelangkaan : string
-	elemen : string
->
+// type pokemon <
+// 	nama : string
+// 	namaPokemon : string
+// 	jumlahPokemon : integer
+// 	kelangkaan : string
+// 	elemen : string
+// >
 
-type tasPokemon : array [0...POKEMONMAX-1] of pokemon
-
-
-program main 
-
-kamus 
-	data : tasPokemon
-	index : integer
-
-algoritma
-	output("==================================================")
-	output("= Tulis Tingkat Kelangkaan : rare, medium, low   =")
-	output("= Tulis Elemen : Listrik, Tanah, Api, Air, Angin =")
-	output("==================================================")
-	output("\n")
-
-	inputData(data)
-
-	output("Selamat kepada :", cariNamaOrangPalingBanyakPokemon(data), "telah mendapatkan pokemon paling banyak dengan jumlah pokemon sebanyak :", data[cariPalingBanyakPokemon(data)].jumlahPokemon)
-	output("------Dengan Spesifikasi Pokemon------")
-	output("Nama Pokemon :", data[cariPalingBanyakPokemon(data)].namaPokemon)
-	output("Tingkat Kelangkaan :", data[cariPalingBanyakPokemon(data)].kelangkaan)
-	output("Elemen Pokemon :", data[cariPalingBanyakPokemon(data)].elemen)
-	output("---------------------------------------")
-
-	output("Namun sayang sekali, kepada :", cariNamaOrangPalingSedikitPokemon(data), "telah mendapatkan pokemon paling sedikit dengan jumlah pokemon sebanyak :", data[cariPalingSedikitPokemon(data)].jumlahPokemon)
-endprogram
+// type tasPokemon : array [0...POKEMONMAX-1] of pokemon
 
 
-procedure inputData (data : tasPokemon)
-{
-	pada procedure ini, user akan diminta untuk memasukkan data sebanyak NMAX kali, NMAX ini sebagai batas maksimal input data
-}
+// program main 
 
-kamus
-	i : integer
+// kamus 
+// 	data : tasPokemon
+// 	index : integer
 
-algoritma	
-	for i <- 0 to NMAX-1 do
-		output("Silahkan masukan data orang ke", i+1)
-		output("Masukan nama anda : ")
-		input(data[i].nama)
-		output("Masukan nama pokemon yang diperoleh : ")
-		input(data[i].namaPokemon)
-		output("Masukan jumlah pokemon yang diperoleh : ")
-		input(data[i].jumlahPokemon)
-		output("Masukan tingkat kelangkaan pokemon : ")
-		input(data[i].kelangkaan)
-		output("Masukan elemen pokemon : ")
-		input(data[i].elemen)
-		output("\n")
+// algoritma
+// 	output("==================================================")
+// 	output("= Tulis Tingkat Kelangkaan : rare, medium, low   =")
+// 	output("= Tulis Elemen : Listrik, Tanah, Api, Air, Angin =")
+// 	output("==================================================")
+// 	output("\n")
 
-		if data[i].jumlahPokemon > POKEMONMAX then
-			data[i].jumlahPokemon <- POKEMONMAX
-		endif
-	endfor
+// 	inputData(data)
 
-endprocedure
+// 	output("Selamat kepada :", cariNamaOrangPalingBanyakPokemon(data), "telah mendapatkan pokemon paling banyak dengan jumlah pokemon sebanyak :", data[cariPalingBanyakPokemon(data)].jumlahPokemon)
+// 	output("------Dengan Spesifikasi Pokemon------")
+// 	output("Nama Pokemon :", data[cariPalingBanyakPokemon(data)].namaPokemon)
+// 	output("Tingkat Kelangkaan :", data[cariPalingBanyakPokemon(data)].kelangkaan)
+// 	output("Elemen Pokemon :", data[cariPalingBanyakPokemon(data)].elemen)
+// 	output("---------------------------------------")
+
+// 	output("Namun sayang sekali, kepada :", cariNamaOrangPalingSedikitPokemon(data), "telah mendapatkan pokemon paling sedikit dengan jumlah pokemon sebanyak :", data[cariPalingSedikitPokemon(data)].jumlahPokemon)
+// endprogram
 
 
-function cariPalingBanyakPokemon (data : tasPokemon) -> integer
-{
-	pada fungsi ini, akan dicari data orang yang mendapatkan pokemon paling banyak
-}
+// procedure inputData (data : tasPokemon)
+// {
+// 	pada procedure ini, user akan diminta untuk memasukkan data sebanyak NMAX kali, NMAX ini sebagai batas maksimal input data
+// }
 
-kamus
-	max : integer
-	idx : integer
-	i : integer
+// kamus
+// 	i : integer
 
-algoritma
-	max <- data[0].jumlahPokemon
-	idx <- 0
-	for i <- 0 to NMAX-1 do
-		if data[i].jumlahPokemon > max then
-			max <- data[i].jumlahPokemon
-			idx <- i
-		endif
-	endfor
-	return idx
+// algoritma	
+// 	for i <- 0 to NMAX-1 do
+// 		output("Silahkan masukan data orang ke", i+1)
+// 		output("Masukan nama anda : ")
+// 		input(data[i].nama)
+// 		output("Masukan nama pokemon yang diperoleh : ")
+// 		input(data[i].namaPokemon)
+// 		output("Masukan jumlah pokemon yang diperoleh : ")
+// 		input(data[i].jumlahPokemon)
+// 		output("Masukan tingkat kelangkaan pokemon : ")
+// 		input(data[i].kelangkaan)
+// 		output("Masukan elemen pokemon : ")
+// 		input(data[i].elemen)
+// 		output("\n")
 
-endfunction
+// 		if data[i].jumlahPokemon > POKEMONMAX then
+// 			data[i].jumlahPokemon <- POKEMONMAX
+// 		endif
+// 	endfor
 
-
-function cariNamaOrangPalingBanyakPokemon (data : tasPokemon) -> string
-{
-	pada fungsi ini, akan dicari nama orang yang mendapatkan pokemon paling banyak 
-}
-
-kamus
-	max : integer
-	nama : string
-	i : integer
-
-algoritma
-	max <- data[0].jumlahPokemon
-	nama <- data[0].nama
-	for i <- 0 to NMAX-1 do
-		if data[i].jumlahPokemon > max then
-			max <- data[i].jumlahPokemon
-			nama <- data[i].nama
-		endif
-	endfor
-	return nama
-
-endfunction
+// endprocedure
 
 
-function cariPalingSedikitPokemon (data : tasPokemon) -> integer
-{
-	pada fungsi ini, akan dicari data orang yang mendapatkan pokemon paling sedikit
-}
+// function cariPalingBanyakPokemon (data : tasPokemon) -> integer
+// {
+// 	pada fungsi ini, akan dicari data orang yang mendapatkan pokemon paling banyak
+// }
 
-kamus
-	min : integer
-	idx : integer
-	i : integer
+// kamus
+// 	max : integer
+// 	idx : integer
+// 	i : integer
 
-algoritma
-	min <- data[0].jumlahPokemon
-	idx <- 0
-	for i <- 0 to NMAX-1 do
-		if data[i].jumlahPokemon < min then
-			min <- data[i].jumlahPokemon
-			idx <- i
-		endif
-	endfor
-	return idx
+// algoritma
+// 	max <- data[0].jumlahPokemon
+// 	idx <- 0
+// 	for i <- 0 to NMAX-1 do
+// 		if data[i].jumlahPokemon > max then
+// 			max <- data[i].jumlahPokemon
+// 			idx <- i
+// 		endif
+// 	endfor
+// 	return idx
 
-endfunction
-
-
-function cariNamaOrangPalingSedikitPokemon (data : tasPokemon) -> string
-{
-	pada fungsi ini, akan dicari nama orang yang mendapatkan pokemon paling sedikit
-}
-
-kamus
-	min : integer
-	nama : string
-	i : integer
-
-algoritma
-	min <- data[0].jumlahPokemon
-	nama <- data[0].nama
-	for i <- 0 to NMAX-1 do
-		min <- data[i].jumlahPokemon
-		nama <- data[i].nama
-		if data[i].jumlahPokemon < min then
-			min <- data[i].jumlahPokemon
-			nama <- data[i].nama
-		endif
-	endfor
-	return nama
-
-endfunction
+// endfunction
 
 
+// function cariNamaOrangPalingBanyakPokemon (data : tasPokemon) -> string
+// {
+// 	pada fungsi ini, akan dicari nama orang yang mendapatkan pokemon paling banyak 
+// }
+
+// kamus
+// 	max : integer
+// 	nama : string
+// 	i : integer
+
+// algoritma
+// 	max <- data[0].jumlahPokemon
+// 	nama <- data[0].nama
+// 	for i <- 0 to NMAX-1 do
+// 		if data[i].jumlahPokemon > max then
+// 			max <- data[i].jumlahPokemon
+// 			nama <- data[i].nama
+// 		endif
+// 	endfor
+// 	return nama
+
+// endfunction
 
 
+// function cariPalingSedikitPokemon (data : tasPokemon) -> integer
+// {
+// 	pada fungsi ini, akan dicari data orang yang mendapatkan pokemon paling sedikit
+// }
+
+// kamus
+// 	min : integer
+// 	idx : integer
+// 	i : integer
+
+// algoritma
+// 	min <- data[0].jumlahPokemon
+// 	idx <- 0
+// 	for i <- 0 to NMAX-1 do
+// 		if data[i].jumlahPokemon < min then
+// 			min <- data[i].jumlahPokemon
+// 			idx <- i
+// 		endif
+// 	endfor
+// 	return idx
+
+// endfunction
 
 
+// function cariNamaOrangPalingSedikitPokemon (data : tasPokemon) -> string
+// {
+// 	pada fungsi ini, akan dicari nama orang yang mendapatkan pokemon paling sedikit
+// }
 
+// kamus
+// 	min : integer
+// 	nama : string
+// 	i : integer
 
+// algoritma
+// 	min <- data[0].jumlahPokemon
+// 	nama <- data[0].nama
+// 	for i <- 0 to NMAX-1 do
+// 		min <- data[i].jumlahPokemon
+// 		nama <- data[i].nama
+// 		if data[i].jumlahPokemon < min then
+// 			min <- data[i].jumlahPokemon
+// 			nama <- data[i].nama
+// 		endif
+// 	endfor
+// 	return nama
 
-
-
-
-
-
-
-	// cariPalingBanyakPokemon(data)
-	// fmt.Print("\n")
-	// cariPalingSedikitPokemon(data)
-
-		// var max int
-	// var nama string
-	// var namaPokemon string
-	// var kelangkaan string
-	// var elemen string
-	// fmt.Println("Selamat kepada :", nama, "telah mendapatkan pokemon paling banyak dengan jumlah pokemon sebanyak :", max)
-	// fmt.Println("------Dengan Spesifikasi Pokemon------")
-	// fmt.Println("Nama Pokemon :", namaPokemon)
-	// fmt.Println("Tingkat Kelangkaan :", kelangkaan)
-	// fmt.Println("Elemen Pokemon :", elemen)
-	// fmt.Println("---------------------------------------")
-	// for i := 0; i < POKEMONMAX; i++ {
-	// 	if data[i].jumlahPokemon > max {
-	// 		max = data[i].jumlahPokemon
-	// 		nama = data[i].nama
-	// 		namaPokemon = data[i].namaPokemon
-	// 		kelangkaan = data[i].kelangkaan
-	// 		elemen = data[i].elemen
-	// 	}
-	// }
-
-	// var min int
-	// var nama string 
-	// for i := 0; i < POKEMONMAX; i++ {
-	// 	min = data[i].jumlahPokemon
-	// 	nama = data[i].nama
-	// 	if data[i].jumlahPokemon < min {
-	// 		min = data[i].jumlahPokemon
-	// 		nama = data[i].nama
-	// 	}
-	// }
-	// fmt.Println("Namun sayang sekali, kepada :", nama, "telah mendapatkan pokemon paling sedikit dengan jumlah pokemon sebanyak :", min)
-
+// endfunction
