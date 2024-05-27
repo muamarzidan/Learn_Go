@@ -17,14 +17,6 @@ func main() {
 
 func ganjilTerbesar(T [N]int, jumlah int) int {
     //mengembalikan bilangan ganjil terbesar dalam array T dengan banyak data sebanyak jumlah
-	...
-	return ...
-}
-
-LENGKAPI CODE DIATAS SESUAI DENGAN KODE YANG SUDAH ANDA BUAT
-
-func ganjilTerbesar(T [N]int, jumlah int) int {
-    //mengembalikan bilangan ganjil terbesar dalam array T dengan banyak data sebanyak jumlah
     var maxGanjil int = -1
 	for i := 0; i < jumlah; i++ {
 		if T[i]%2 != 0 && T[i] > maxGanjil {

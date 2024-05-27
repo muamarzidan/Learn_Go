@@ -31,41 +31,41 @@ func sudahTerurut(T [N]int, total int) bool {
 }
 
 
-PSEUDOCODE
+// PSEUDOCODE
 
-constant N integer : 1000
+// constant N integer : 1000
 
-procedure sudahTerurut (T : array [N] of integer, total : integer) -> boolean
-{
-	// algoritma untuk mengecek apakah data dalam array sudah terurut atau belum
-	// mengembalikan boolean true jika data dalam array sudah terurut dan false jika belum
-}
+// procedure sudahTerurut (T : array [N] of integer, total : integer) -> boolean
+// {
+// 	// algoritma untuk mengecek apakah data dalam array sudah terurut atau belum
+// 	// mengembalikan boolean true jika data dalam array sudah terurut dan false jika belum
+// }
 
-kamus 
-	i, total : integer
+// kamus 
+// 	i, total : integer
 
-algoritma
-	for i <- 0 to total-1 do
-		if T[i] > T[i+1] then
-			return false
-		endif
-	endfor
-	return true
+// algoritma
+// 	for i <- 0 to total-1 do
+// 		if T[i] > T[i+1] then
+// 			return false
+// 		endif
+// 	endfor
+// 	return true
 
-endprocedure
+// endprocedure
 
 
-program main 
+// program main 
 
-kamus
-	T : array [N] of integer
-	total : integer
+// kamus
+// 	T : array [N] of integer
+// 	total : integer
 
-algoritma
-	input(total)
-	for j <- 0 to total-1 do
-		input(T[j])
-	endfor
-	output(sudahTerurut(T, total))
+// algoritma
+// 	input(total)
+// 	for j <- 0 to total-1 do
+// 		input(T[j])
+// 	endfor
+// 	output(sudahTerurut(T, total))
 
-endprogram
+// endprogram
