@@ -20,9 +20,9 @@ func main() {
 	urut(&himp1)      
 	urut(&himp2) 
 	if sama(himp1, himp2) {
-		fmt.Println("Himpunan pertama dan kedua sama = true")
+		fmt.Println("Himpunan pertama dan kedua sama = True")
 	} else {
-		fmt.Println("Himpunan pertama dan kedua sama = false")
+		fmt.Println("Himpunan pertama dan kedua sama = False")
 	}
 }
 
