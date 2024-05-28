@@ -42,8 +42,9 @@ func sorting(tabInt *arrayInt, N int) {
 }
 
 func median(tabInt *arrayInt, N int) {
+	var media float64
 	if N%2 == 0 {
-		median := float64(tabInt[N/2]+tabInt[N/2-1]) / 2.0
+		median = float64(tabInt[N/2]+tabInt[N/2-1]) / 2.0
 		fmt.Printf("%.1f\n", median)
 	} else {
 		fmt.Println(tabInt[N/2])
