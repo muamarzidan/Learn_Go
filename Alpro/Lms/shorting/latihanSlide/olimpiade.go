@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 type peserta struct {
 	nama string
@@ -38,13 +36,22 @@ func poin(g, s, b int) int {
 }
 
 func sorting(t *olimpiade, n int) {
-	for i := 1; i < n; i++ {
-		temp := t[i]
-		j := i - 1
-		for j >= 0 && poin(t[j].g, t[j].s, t[j].b) < poin(temp.g, temp.s, temp.b) {
-			t[j+1] = t[j]
-			j--
+	var pass, idx, i int
+	var temp peserta
+
+	pass = 1
+	for pass <= n-1 {
+		idx = pass - 1
+		i = pass
+		for i < n {
+			if poin(t[idx].g, t[idx].s, t[idx].b) < poin(t[i].g, t[i].s, t[i].b) {
+				idx = i
+			}
+			i = i + 1
 		}
-		t[j+1] = temp
+		temp = t[pass-1]
+		t[pass-1] = t[idx]
+		t[idx] = temp
+		pass = pass + 1
 	}
 }
