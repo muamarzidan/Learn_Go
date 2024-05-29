@@ -20,14 +20,23 @@ func panjang(bunga string) int {
 }
 
 func mengurutkan(tabBunga *arrayBunga, N int) {
-	for i := 1; i < N; i++ {
-		temp := tabBunga[i]
-		j := i - 1
-		for j >= 0 && panjang(tabBunga[j]) > panjang(temp) {
-			tabBunga[j+1] = tabBunga[j]
-			j--
+	var pass, idx, i int
+	var temp string
+
+	pass = 1
+	for pass <= N-1 {
+		idx = pass - 1
+		i = pass
+		for i < N {
+			if panjang(tabBunga[idx]) < panjang(tabBunga[i]) {
+				idx = i
+			}
+			i = i + 1
 		}
-		tabBunga[j+1] = temp
+		temp = tabBunga[pass-1]
+		tabBunga[pass-1] = tabBunga[idx]
+		tabBunga[idx] = temp
+		pass = pass + 1
 	}
 }
 
