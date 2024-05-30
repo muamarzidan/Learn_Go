@@ -31,7 +31,7 @@ func bacaMasukan(set *tHimpunan, n int) {
 	for i := 0; i < n; i++ {
 		var x int
 		fmt.Scan(&x)
-		if !ada(*set, x) { // hanya tambahkan jika tidak ada
+		if !ada(*set, x) {
 			set.anggota[set.panjang] = x
 			set.panjang++
 		}
