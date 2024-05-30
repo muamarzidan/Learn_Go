@@ -28,7 +28,8 @@ func mengurutkan(tabBunga *arrayBunga, N int) {
 		idx = pass - 1
 		i = pass
 		for i < N {
-			if panjang(tabBunga[idx]) < panjang(tabBunga[i]) {
+			// if panjang(tabBunga[idx]) < panjang(tabBunga[i]) { // jika menurun
+			if panjang(tabBunga[idx]) > panjang(tabBunga[i]) { // jika menaik
 				idx = i
 			}
 			i = i + 1
