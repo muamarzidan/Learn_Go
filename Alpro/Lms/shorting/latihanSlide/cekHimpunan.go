@@ -73,3 +73,111 @@ func sama(set1, set2 tHimpunan) bool {
 	}
 	return true
 }
+
+
+
+PSEUDOCODE
+
+constant nMax = 37
+
+type tHimpunan struct <
+	anggota array [1..nMax] of int
+	panjang int
+>
+
+program main 
+
+kamus
+	himp1, himp2 : tHimpunan
+	n : integer
+
+algoritma
+	output("Masukkan batas jumlah anggota himpunan maksimal:")
+	input(n)
+	bacaMasukan(himp1, n)
+	bacaMasukan(himp2, n)
+	urut(himp1)
+	urut(himp2)
+	if sama(himp1, himp2) then
+		output("Himpunan pertama dan kedua sama = True")
+	else
+		output("Himpunan pertama dan kedua sama = False")
+	endif
+
+endprogram
+
+
+procedure bacaMasukan(set : tHimpunan, n : integer)
+
+kamus
+	i, x : integer
+
+algoritma
+	set.panjang <- 0
+	output("Masukkan anggota himpunan:")
+	for i <- 0 to n-1 do
+		input(x)
+		if not ada(set, x) then
+			set.anggota[set.panjang] <- x
+			set.panjang <- set.panjang + 1
+		endif
+	endfor
+
+endprocedure
+
+
+function ada(set : tHimpunan, x : integer) -> boolean
+
+kamus
+	i : integer
+
+algoritma
+	for i <- 0 to set.panjang-1 do
+		if set.anggota[i] = x then
+			return true
+		endif
+	endfor
+	return false
+
+endfunction
+
+
+procedure urut(set : tHimpunan)
+
+kamus
+	pass, idx, temp, i : integer
+
+algoritma
+	for pass <- 0 to set.panjang-1 do
+		idx <- pass
+		for i <- pass+1 to set.panjang-1 do
+			if set.anggota[idx] < set.anggota[i] then
+				idx <- i
+			endif
+		endfor
+		temp <- set.anggota[pass]
+		set.anggota[pass] <- set.ang
+		set.anggota[idx] <- temp
+	endfor
+
+endprocedure
+
+
+function sama(set1, set2 : tHimpunan) -> boolean
+
+kamus
+	i : integer
+
+algoritma
+	if set1.panjang not set2.panjang then
+		return false
+	endif
+	for i <- 0 to set1.panjang-1 do
+		if set1.anggota[i] not set2.anggota[i] then
+			return false
+		endif
+	endfor
+	return true
+
+endfunction
+
