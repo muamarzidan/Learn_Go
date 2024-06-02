@@ -78,7 +78,7 @@ func sama(set1, set2 tHimpunan) bool {
 
 PSEUDOCODE
 
-constant nMax : 37
+constant nMax integer : 37
 
 type tHimpunan struct <
 	anggota array [1..nMax] of integer

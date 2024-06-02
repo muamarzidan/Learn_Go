@@ -58,7 +58,7 @@ func tampilArray(tabBunga arrayBunga, N int) {
 
 PSEUDOCODE
 
-constant nMax : 1000
+constant nMax integer : 1000
 
 type arrayBunga array[1..nMax] of string
 
