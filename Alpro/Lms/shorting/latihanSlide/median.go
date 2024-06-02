@@ -56,7 +56,7 @@ func median(tabInt *arrayInt, N int) {
 
 PSEUDOCODE
 
-constant nMax : 1000
+constant nMax integer : 1000
 
 type arrayInt array [1..nMax] of integer
 
