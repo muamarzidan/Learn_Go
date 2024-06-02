@@ -41,7 +41,7 @@ PSEUDOCODE
 
 constant nmax int : 100
 
-type tabelFrekuensi [nmax]int
+type tabelFrekuensi [0...nmax-1] of integer
 
 program main
 

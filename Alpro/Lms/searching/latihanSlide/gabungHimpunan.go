@@ -52,7 +52,7 @@ PSEUDOCODE
 
 constant nmax int : 100
 
-type tHimpunan [nmax]int
+type tHimpunan [0...nmax-1] of integer
 
 program main
 
