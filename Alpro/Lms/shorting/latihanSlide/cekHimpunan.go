@@ -78,10 +78,10 @@ func sama(set1, set2 tHimpunan) bool {
 
 PSEUDOCODE
 
-constant nMax = 37
+constant nMax : 37
 
 type tHimpunan struct <
-	anggota array [1..nMax] of int
+	anggota array [1..nMax] of integer
 	panjang int
 >
 
@@ -107,7 +107,11 @@ algoritma
 endprogram
 
 
-procedure bacaMasukan(set : tHimpunan, n : integer)
+procedure bacaMasukan(in/out set : tHimpunan, in n : integer)
+{
+	IS : varibael set dan n merupakan lemparan dari program main/utama, untuk diinputkan anggota himpunan
+	FS : menampilkan anggota himpunan yang sudah diinputkan
+}
 
 kamus
 	i, x : integer
@@ -127,6 +131,9 @@ endprocedure
 
 
 function ada(set : tHimpunan, x : integer) -> boolean
+{
+	mengebalikan nilai true jika anggota himpunan sudah ada, dan false jika anggota himpunan belum ada
+}
 
 kamus
 	i : integer
@@ -142,7 +149,11 @@ algoritma
 endfunction
 
 
-procedure urut(set : tHimpunan)
+procedure urut(in/out set : tHimpunan)
+{
+	IS : variabel set merupakan lemparan dari program main/utama, untuk diurutkan anggota himpunan
+	FS : menampilkan anggota himpunan yang sudah diurutkan
+}
 
 kamus
 	pass, idx, temp, i : integer
@@ -164,6 +175,9 @@ endprocedure
 
 
 function sama(set1, set2 : tHimpunan) -> boolean
+{
+	mengebalikan nilai true jika himpunan pertama dan kedua sama, dan false jika himpunan pertama dan kedua tidak sama
+}
 
 kamus
 	i : integer

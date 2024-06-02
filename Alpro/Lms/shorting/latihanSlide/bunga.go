@@ -58,7 +58,7 @@ func tampilArray(tabBunga arrayBunga, N int) {
 
 PSEUDOCODE
 
-constant nMax = 1000
+constant nMax : 1000
 
 type arrayBunga array[1..nMax] of string
 
@@ -76,7 +76,11 @@ algoritma
 endprogram
 
 
-procedure mengurutkan(var tabBunga : arrayBunga, N : integer)
+procedure mengurutkan(in/out tabBunga : arrayBunga, in N : integer)
+{
+	IS : variabel N dan tabBunga merupakan lemparan dari program main/utama, untuk diurutkan berdasarkan panjang string bunga
+	FS : tabBunga sudah terurut berdasarkan panjang string bunga
+}
 
 kamus 
 	pass, idx, i : integer
@@ -103,6 +107,9 @@ endprocedure
 
 
 function panjang(bunga : string) -> integer
+{
+	mengebalikan panjang string bunga dikurangi 2
+}
 
 kamus
 	-
@@ -113,7 +120,11 @@ algoritma
 endfunction
 
 
-procedure isiArray(var tabBunga : arrayBunga, var N : integer)
+procedure isiArray(in/out tabBunga : arrayBunga, in N : integer)
+{
+	IS : variabel N dan tabBunga merupakan lemparan dari program main/utama, untuk diisi dengan inputan string bunga
+	FS : tabBunga sudah terisi dengan inputan string bunga
+}
 
 kamus
 	i : integer
@@ -127,8 +138,11 @@ algoritma
 endprocedure
 
 
-procedure tampilArray(tabBunga : arrayBunga, N : integer)	
-
+procedure tampilArray(in/out tabBunga : arrayBunga, in N : integer)	
+{
+	IS : variabel N dan tabBunga merupakan lemparan dari program main/utama, untuk ditampilkan
+	FS : menampilkan isi tabBunga
+}
 kamus
 	i : integer
 

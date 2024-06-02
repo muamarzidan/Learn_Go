@@ -56,7 +56,7 @@ func median(tabInt *arrayInt, N int) {
 
 PSEUDOCODE
 
-constant nMax = 1000
+constant nMax : 1000
 
 type arrayInt array [1..nMax] of integer
 
@@ -75,8 +75,11 @@ algoritma
 endprogram
 
 
-procedure inputArray(tabInt : arrayInt, N : integer)
-
+procedure inputArray(in/out tabInt : arrayInt, in N : integer)
+{
+	IS : variabel N bertipe integer, dan tabInt bertipe arrayInt yang merupakan lemparan dari program main/utama
+	FS : mengisi array tabInt dengan N elemen yang diinputkan oleh pengguna
+}
 kamus
 	i : integer
 
@@ -92,8 +95,11 @@ algoritma
 endprocedure
 
 
-procedure sorting(tabInt : arrayInt, N : integer)
-
+procedure sorting(in/out tabInt : arrayInt, in N : integer)
+{
+	IS : variabel N dan tabInt merupakan lemparan dari program main/utama
+	FS : mengurutkan array tabInt dari elemen ke-0 sampai ke-N-1 mennggunakan insertion sort
+}
 kamus
 	pass, i, temp : integer
 
@@ -114,8 +120,11 @@ algoritma
 endprocedure
 
 
-procedure median(tabInt : arrayInt, N : integer)
-
+procedure median(in/out tabInt : arrayInt, in N : integer)
+{
+	IS : variabel N dan tabInt merupakan lemparan dari program main/utama
+	FS : menampilkan nilai median dari array tabInt dengan cara mengecek apakah N ganjil atau genap
+}
 kamus
 	median : real
 
