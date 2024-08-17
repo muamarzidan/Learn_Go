@@ -1,13 +1,12 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var cekMember bool
 	var belanja int
 	fmt.Scan(&belanja, &cekMember)
 	fmt.Println(cekDiskonMember(belanja, cekMember))
-
 }
 
 func cekDiskonMember(belanja int, cekMember bool) int {

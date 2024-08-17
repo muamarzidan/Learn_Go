@@ -1,10 +1,9 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var x, y, faktorialX, faktorialY, permutasi int
-
 	fmt.Scan(&x, &y)
 
 	faktorialX = Faktorial(x)
@@ -29,6 +28,7 @@ func Faktorial(n int) int {
 func Permutasi(x, y int) int {
 	return Faktorial(x) / Faktorial(x-y)
 }
+
 
 // PSEUDOCODE
 

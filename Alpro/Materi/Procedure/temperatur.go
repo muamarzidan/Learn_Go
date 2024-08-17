@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 
@@ -25,6 +24,7 @@ func fahrenheit(c float64, hasil *float64) {
 func kelvin (c float64, hasil *float64) {
 	*hasil = c + 273.15
 }
+
 
 //PSEUDOCODE
 

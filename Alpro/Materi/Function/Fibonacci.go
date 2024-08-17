@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func main() {
     var x, digitFibo, total, i int
@@ -26,7 +26,6 @@ func fibonacci(x int) int {
 
 
 // PSEUDOCODE
-
 // program main
 
 // kamus

@@ -1,9 +1,8 @@
 package  main
-
 import "fmt"
 
-const MAXINPUT int = 10
 
+const MAXINPUT int = 10
 type berat [MAXINPUT]int
 
 func main() {
@@ -20,7 +19,6 @@ func main() {
 
 func baca(berat_badan *berat, n int) {
 	var i int 
-
 	if n > MAXINPUT {
 		n = MAXINPUT
 	}
@@ -31,7 +29,7 @@ func baca(berat_badan *berat, n int) {
 }
 
 func cetak_rata(berat_badan berat, n int, rata float64) {
-	fmt.Println("Rata-rata berat badan:", rata)
+	fmt.Println("Rata-rata berat badan : ", rata)
 }
 
 func cetak_kurang_rata(berat_badan berat, n int, rata float64) {
@@ -42,7 +40,7 @@ func cetak_kurang_rata(berat_badan berat, n int, rata float64) {
 		}
 	}
 	
-	fmt.Println("Jumlah berat badan kurang dari rata-rata:", total)
+	fmt.Println("Jumlah berat badan kurang dari rata-rata : ", total)
 }
 
 func rata_berat(berat_badan berat, n int) float64 {

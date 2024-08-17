@@ -1,20 +1,4 @@
-// Buatlah sebuah tipe bentukan nasabah digunakan untuk menyimpan data nasabah 
-// (id nasabah, nama nasabah, nama bank dan nomor rekening) suatu bank di Indonesia.
-
-// Buatlah sebuah tipe array tabNasabah dengan kapasitas 2022 orang nasabah.
-
-// Lengkapi subprogram berikut ini sesuai dengan spesifikasi yang diberikan!
-
-// procedure addNasabah(in/out t: tabNasabah, N : integer)
-// { I.S. : terdefinisi array T yang berisi data sejumlah N nasabah }	
-// { F.S. : array T bertambah 1 orang nasabah baru, tampilkan "data penuh" apabila array telah penuh }
-
-// procedure cetak(in T:tabNasabah, N:integer, X:string) 
-// { I.S. : terdefinisi array T yang berisi data sejumlah N nasabah dan string X }
-// {F.S. : menampilkan data nasabah yang memiliki nama bank X}
-
 package main
-
 import "fmt"
 
 
@@ -55,12 +39,3 @@ func main() {
 	addNasabah(&T, &N)
 	cetak(T, N, X)
 }
-
-contoh masukan
-3
-1234 Andi BRI 123456
-5678 Budi BCA 654321
-9101 Caca BNI 987654
-BRI
-contoh keluaran
-1234 Andi BRI 123456

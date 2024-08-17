@@ -1,9 +1,8 @@
 package main 
-
 import "fmt"	
 
-const MAXINPUT int = 10
 
+const MAXINPUT int = 10
 type maxMatrix [MAXINPUT]int
 
 func main() {
@@ -32,4 +31,3 @@ func cetak(input maxMatrix, n int) {
 		fmt.Println()
 	}
 }
-

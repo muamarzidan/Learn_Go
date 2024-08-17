@@ -1,6 +1,6 @@
 package main  
-
 import "fmt"
+
 
 const END_INPUT = -1
 
@@ -10,7 +10,7 @@ func main() {
 	if inputVal != END_INPUT {
 		findMaxValue(inputVal)
 	} else {
-		fmt.Println("Program selesai", inputVal)
+		fmt.Println("Program selesai ", inputVal)
 	}
 }
 

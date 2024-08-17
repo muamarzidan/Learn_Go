@@ -1,42 +1,6 @@
 package main
-
 import "fmt"
 
-// Dalam sebuah tipe bentukan golang, terdapat 2 bentukan yaitu :
-// 1. Tipe bentukan struktur / struct
-// 2. Tipe bentukan array
-
-// - Penulisan tipe bentukan struct  dalam alias : type nama_alias : tipe_data, contoh : type bilangan int, var a bilangan = 10
-// - Penulisan tipe bentukan struct dalam struktur : contoh
-// 	type nama_struct struct {
-// 		nama_tipe_data1 : string
-// 		nama_tipe_data2 : int
-// 		...
-// 	}
-
-// 	pemanggilan
-// 	var cobaPanggil nama_struct
-// 	cobaPanggil.nama_tipe_data1 = "coba"
-
-// - Informasi tentang array :
-// 	a) Array dapat menyimpan data/elemen dengan tipe homogen/sejenis.
-// 	b) Element terurut berdasarkan indeks, dimulai dari 0.
-// 	c) Banyaknya elemen adalah tetap.
-// 	d) Index adalah nomor untuk mengakses elemen dari array.
-// 	e) Tipe indeks adalah integer atau character abjad
-
-// - Array dibagi menjadi 2 jenis struktur:
-// 	a) Array linear
-// 	b) Array Non linear
-
-// 	- Array linear : Array, list, stack, queue
-// 	- Array non linear : Tree, graph
-
-// - Penulisan array dalam golang : nama_varibel : [jumlah_elemen]tipe_data, contoh : var a [5]int
-
-
-
-// TUGAS BUKU WITH STRUCT
 
 type buku struct {
 	title string

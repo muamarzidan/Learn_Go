@@ -1,15 +1,5 @@
 package main
-
 import "fmt"
-
-// Buatlah program dengan spesifikasi berikut ini!
-
-// Sebuah tipe array of integer yang berkapasitas 256!
-// Buatlah procedure untuk pengisian array tersebut dengan sejumlah n bilangan.
-// Buatlah procedure untuk reverse isi dari array!
-// Buatlah function untuk mengecek apakah suatu array memiliki pola palindrom! Nilai elemen membentuk pola simetris. 
-// Contoh A = [10, 20, 30, 20, 10], B = [15, 75, 75, 15] dan C = [100]
-// Buatlah program utamanya untuk menguji tiga subprogram yang telah dibuat tersebut!
 
 
 func isiArray(A *[]int, n int) {

@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var jariAlas, Tinggi float64

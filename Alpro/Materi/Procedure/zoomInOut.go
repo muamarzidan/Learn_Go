@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 
@@ -27,6 +26,7 @@ func zoomOut(bilAwal, bilDua, kelipatan int, hasilZoomAwal *int, hasilZoomDua *i
 	*hasilZoomDua = bilDua / kelipatan
 	fmt.Println(*hasilZoomAwal, *hasilZoomDua)
 }
+
 
 // PSEUDOCODE
 

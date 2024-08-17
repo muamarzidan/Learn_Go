@@ -1,24 +1,6 @@
-// Sebuah program digunakan untuk menyimpan jumlah kemenangan pertandingan bola 2 tim dalam setiap tahunnya.
-
-// Masukan terdiri dari 2 baris. Baris pertama adalah kumpulan bilangan bulat yang menyatakan gol-gol yang diperoleh tim 1, 
-// sedangkan baris kedua adalah kumpulan gol yang diperoleh tim 2. Masukan pada setiap barisnya berakhir apabila bilangan 
-// yang diberikan adalah negatif. 
-
-// Keluaran berupa 2 bilangan yang menyatakan rata-rata kemenangan dari 2 tim tersebut setiap tahunnya.
-
-
-// ada 2 fungsi selain fungi main yaitu :
-
-// procedure inputData(in/out t: tabGoal, n : integer)
-// { I.S. : data kemenangan suatu tim telah siap pada piranti masukan}
-// { F.S. : t berisi n data kemanaan tim}
-
-// function rata(t: tabGoal, n: integer) -> real
-// {diberikan array t yang berisi n data kemenangan tim, fungsi ini mengembalikan rata-rata kemenangan tim}
-
 package main
-
 import "fmt"
+
 
 type tabGoal struct {
 	data [100]int

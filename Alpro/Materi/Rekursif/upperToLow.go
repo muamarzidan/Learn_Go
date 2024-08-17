@@ -1,6 +1,30 @@
 package main
-
 import "fmt"
+
+
+func main () {
+	var kata string
+	fmt.Scanln(&kata)
+	fmt.Println(uppernew(kata))
+}
+
+func uppernew(kata string) string {
+	if len(kata) == 0 {
+		return ""
+	}
+	return string(upperToLow(kata[0])) + uppernew(kata[1:])
+}
+
+func upperToLow(kar byte) byte {
+	var hasil byte
+	if kar >= 'A' && kar <= 'Z' {
+		hasil = kar + 32
+	} else {
+		hasil = kar
+	}
+	return hasil
+}
+
 
 
 // func main() {
@@ -20,12 +44,6 @@ import "fmt"
 // 	return hasil
 // }
 
-func main () {
-	var kata string
-	fmt.Scanln(&kata)
-	fmt.Println(uppernew(kata))
-}
-
 // func uppernew(kata string) string {
 // 	var hasil string
 // 	for i := 0; i < len(kata); i++ {
@@ -43,20 +61,3 @@ func main () {
 // 	}
 // 	return hasil
 // }
-
-func uppernew(kata string) string {
-	if len(kata) == 0 {
-		return ""
-	}
-	return string(upperToLow(kata[0])) + uppernew(kata[1:])
-}
-
-func upperToLow(kar byte) byte {
-	var hasil byte
-	if kar >= 'A' && kar <= 'Z' {
-		hasil = kar + 32
-	} else {
-		hasil = kar
-	}
-	return hasil
-}
