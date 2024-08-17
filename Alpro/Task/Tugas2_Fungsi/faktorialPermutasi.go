@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func soal3() {
 	var x, y, faktorialX, faktorialY, permutasi int

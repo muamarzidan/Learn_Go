@@ -1,6 +1,7 @@
 package main
 import "fmt"
 
+
 func main() {
 	var koinLumin, koinQuantumShard, koinGalactum, koinNebulaCrown, koinStellaris int
     fmt.Scan(&koinLumin)

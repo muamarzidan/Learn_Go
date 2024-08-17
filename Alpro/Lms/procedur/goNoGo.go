@@ -1,9 +1,10 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var hujanTurun, bawaPayung string
+	
 	fmt.Scanln(&hujanTurun, &bawaPayung)
 	goNoGo(hujanTurun, bawaPayung)
 }

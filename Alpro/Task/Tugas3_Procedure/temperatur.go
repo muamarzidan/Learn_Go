@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func soal4() {
 	var celsius float64

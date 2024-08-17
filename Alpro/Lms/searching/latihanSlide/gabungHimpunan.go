@@ -1,9 +1,7 @@
 package main 
-
 import "fmt"
 
 const nmax = 100
-
 type tHimpunan [nmax]int
 
 func main() {
@@ -22,14 +20,14 @@ func main() {
 
 func gabungHimpunan(nDataA int, A tHimpunan, nDataB int, B tHimpunan, Gabungan tHimpunan) {
 	var x int
-	fmt.Println("Masukkan data himpunan A sebanyak", nDataA)
+	fmt.Println("Masukkan data himpunan A sebanyak ", nDataA)
 	for i := 0; i < nDataA; i++ {
 		fmt.Scan(&x)
 		A[x]++
 		Gabungan[x]++
 	}
 
-	fmt.Println("Masukkan data himpunan B sebanyak", nDataB)
+	fmt.Println("Masukkan data himpunan B sebanyak ", nDataB)
 	for i := 0; i < nDataB; i++ {
 		fmt.Scan(&x)
 		B[x]++
@@ -43,65 +41,66 @@ func gabungHimpunan(nDataA int, A tHimpunan, nDataB int, B tHimpunan, Gabungan t
 			fmt.Print(i, " ")
 		}
 	}
+	
 	fmt.Println()
 }
 
 
 
-PSEUDOCODE
+// PSEUDOCODE
 
-constant nmax int : 100
+// constant nmax int : 100
 
-type tHimpunan [0...nmax-1] of integer
+// type tHimpunan [0...nmax-1] of integer
 
-program main
+// program main
 
-kamus
-	A, B, Gabungan : tHimpunan
-	nDataA, nDataB : integer
+// kamus
+// 	A, B, Gabungan : tHimpunan
+// 	nDataA, nDataB : integer
 
-algoritma
-	output("Masukkan jumlah data himpunan A : ")
-	input(nDataA)
-	output("Masukkan jumlah data himpunan B : ")
-	input(nDataB)
+// algoritma
+// 	output("Masukkan jumlah data himpunan A : ")
+// 	input(nDataA)
+// 	output("Masukkan jumlah data himpunan B : ")
+// 	input(nDataB)
 
-	gabungHimpunan(nDataA, A, nDataB, B, Gabungan)
+// 	gabungHimpunan(nDataA, A, nDataB, B, Gabungan)
 
-endprogram
+// endprogram
 
 
-procedure gabungHimpunan(in nDataA : integer, in/out A : tHimpunan, in nDataB : integer, in/out B : tHimpunan, in/out Gabungan : tHimpunan)
-{
-	IS : menerima inputan dari variabel nDataA dan nDataB, untuk dijadikan maksimal jumlah data ketika di inputakan himpunan A dan B
-	FS : menampilkan gabungan dari himpunan A dan B dari varibael Gabungan 
-}
+// procedure gabungHimpunan(in nDataA : integer, in/out A : tHimpunan, in nDataB : integer, in/out B : tHimpunan, in/out Gabungan : tHimpunan)
+// {
+// 	IS : menerima inputan dari variabel nDataA dan nDataB, untuk dijadikan maksimal jumlah data ketika di inputakan himpunan A dan B
+// 	FS : menampilkan gabungan dari himpunan A dan B dari varibael Gabungan 
+// }
 
-kamus 
-	x, i : integer
+// kamus 
+// 	x, i : integer
 
-algoritma
-	output("Masukkan data himpunan A sebanyak", nDataA)
-	for i <- 0 to nDataA-1 do 
-		input(x)
-		A[x] <- A[x] + 1
-		Gabungan[x] <- Gabungan[x] + 1
-	endfor
+// algoritma
+// 	output("Masukkan data himpunan A sebanyak", nDataA)
+// 	for i <- 0 to nDataA-1 do 
+// 		input(x)
+// 		A[x] <- A[x] + 1
+// 		Gabungan[x] <- Gabungan[x] + 1
+// 	endfor
 
-	output("Masukkan data himpunan B sebanyak", nDataB)
-	for i <- 0 to nDataB-1 do
-		input(x)
-		B[x] <- B[x] + 1
-		if Gabungan[x] == 0 then
-			Gabungan[x] <- Gabungan[x] + 1
-		endif
-	endfor
+// 	output("Masukkan data himpunan B sebanyak", nDataB)
+// 	for i <- 0 to nDataB-1 do
+// 		input(x)
+// 		B[x] <- B[x] + 1
+// 		if Gabungan[x] == 0 then
+// 			Gabungan[x] <- Gabungan[x] + 1
+// 		endif
+// 	endfor
 
-	for i <- 0 to nmax-1 do
-		if Gabungan[i] > 0 then
-			output(i, " ")
-		endif
-	endfor
-	output()
+// 	for i <- 0 to nmax-1 do
+// 		if Gabungan[i] > 0 then
+// 			output(i, " ")
+// 		endif
+// 	endfor
+// 	output()
 
-endprocedure
+// endprocedure

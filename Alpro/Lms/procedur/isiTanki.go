@@ -1,11 +1,11 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var jumlah, tanki int
+	
 	fmt.Scan(&jumlah)
-
 	isiTanki(jumlah, &tanki)
 }
 

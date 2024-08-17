@@ -1,9 +1,9 @@
 package main 
 import "fmt"
 
+
 const POKEMONMAX = 1000
 const NMAX = 5
-
 
 type pokemon struct  {
 	nama string

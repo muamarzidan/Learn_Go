@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var letter string
@@ -20,11 +20,12 @@ func main() {
 			countO++
 		}
 	}
-	fmt.Println("Jumlah huruf a adalah", countA)
-	fmt.Println("Jumlah huruf i adalah", countI)
-	fmt.Println("Jumlah huruf u adalah", countU)
-	fmt.Println("Jumlah huruf e adalah", countE)
-	fmt.Println("Jumlah huruf o adalah", countO)	
+	
+	fmt.Println("Jumlah huruf a adalah ", countA)
+	fmt.Println("Jumlah huruf i adalah ", countI)
+	fmt.Println("Jumlah huruf u adalah ", countU)
+	fmt.Println("Jumlah huruf e adalah ", countE)
+	fmt.Println("Jumlah huruf o adalah ", countO)	
 }
 
 // for i := 0; i < len(letter); i++ {

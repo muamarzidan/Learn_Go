@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 
@@ -29,7 +28,6 @@ func akar(x float64) float64 {
 	}
 	return akar
 }
-
 
 
 // PSEUDOCODE

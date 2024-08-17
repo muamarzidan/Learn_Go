@@ -1,12 +1,12 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var hrf byte
 	var ada bool
-	fmt.Scanf("%c", &hrf)
 
+	fmt.Scanf("%c", &hrf)
 	for hrf != '.' && !ada {
 		ada = huruf(hrf)
 		fmt.Scanf("%c", &hrf)

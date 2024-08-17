@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 
@@ -13,6 +12,7 @@ func rekursifGanjil(n int) {
 	if n <= 0 {
 		return 
 	}
+	
 	if n%2 == 1 {
 		rekursifGanjil(n - 1)
 		fmt.Print(n, " ")

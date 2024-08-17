@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func soal2()	{
 	var a, b, c, d int
@@ -33,6 +33,7 @@ func faktorial(n int) {
 		fmt.Println(1)
 		return
 	}
+	
 	fmt.Println(n * faktorial(n-1))
 }
 

@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func fibonacci(n int) int {
 	if n == 0 {

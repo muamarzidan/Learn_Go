@@ -1,13 +1,13 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var kapasitasBus, jumlahPenumpang int
 	var cek bool
 	var persen float64
-	fmt.Scan(&kapasitasBus, &jumlahPenumpang)
 
+	fmt.Scan(&kapasitasBus, &jumlahPenumpang)
 	persen = persentase(jumlahPenumpang, kapasitasBus)
 
 	cek = valid(persen)
@@ -20,9 +20,11 @@ func main() {
 
 func persentase(jumlahPenumpang, kapasitasBus int) float64 {
 	var hasil float64
+
 	if kapasitasBus == 0 {
 		return 0
 	}
+	
 	hasil = float64(jumlahPenumpang) / float64(kapasitasBus) * 100
 	return hasil
 }

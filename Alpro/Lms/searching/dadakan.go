@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 const NMAX = 1000
@@ -26,12 +25,12 @@ func isiWisudawan(wisudawans *[NMAX]wisudawan) int {
 
     for i := 0; i < NMAX; i++ {
         fmt.Scan(&wisudawans[i].nama, &nim, &wisudawans[i].eprt, &wisudawans[i].semester, &wisudawans[i].ipk)
-
         if nim == "none" {
             total = i
             break
         }
     }
+
     return total
 }
 
@@ -70,4 +69,3 @@ func rataSemester(wisudawans [NMAX]wisudawan, total int) float64 {
 
     return sum / float64(total)
 }
-

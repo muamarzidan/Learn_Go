@@ -1,11 +1,11 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var m, c float64
+	
 	fmt.Scan(&m, &c)
-
 	fmt.Println(persamaanGaris(m, c))
 }
 

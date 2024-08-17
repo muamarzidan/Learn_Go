@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func soal5() {
 	var bilAwal, bilDua, kelipatan, hasilZoomAwal, hasilZoomDua int

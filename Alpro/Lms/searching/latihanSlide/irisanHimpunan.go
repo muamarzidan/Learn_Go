@@ -1,15 +1,14 @@
 package main
-
 import "fmt"
 
 const nmax = 100
-
 type tabelFrekuensi [nmax]int
 
 func main() {
 	var n int
 	var t tabelFrekuensi
 	fmt.Print("Masukkan maksimal jumlah anggota himpunan A : ")
+	
 	fmt.Scan(&n)
 	buatIrisan(n, t)
 }
@@ -19,6 +18,7 @@ func buatIrisan(n int, t tabelFrekuensi) {
 	var A tabelFrekuensi
 	var B tabelFrekuensi
 	var Irisan tabelFrekuensi
+
 	for i := 0; i < n; i++ {
 		fmt.Scan(&x)
 		A[x]++
@@ -47,60 +47,60 @@ func buatIrisan(n int, t tabelFrekuensi) {
 
 
 
-PSEUDOCODE	
+// PSEUDOCODE	
 
-constant nmax int : 100
+// constant nmax int : 100
 
-type tabelFrekuensi [0...nmax-1] of integer
+// type tabelFrekuensi [0...nmax-1] of integer
 
-program main
+// program main
 
-kamus
-	n : integer
-	t : tabelFrekuensi
+// kamus
+// 	n : integer
+// 	t : tabelFrekuensi
 
-algoritma
-	output("Masukkan maksimal jumlah anggota himpunan A : ")
-	input(n)
-	buatIrisan(n, t)
+// algoritma
+// 	output("Masukkan maksimal jumlah anggota himpunan A : ")
+// 	input(n)
+// 	buatIrisan(n, t)
 
-endprogram
+// endprogram
 	
-procedure buatIrisan(in n : integer, in/out t : tabelFrekuensi)
-{
-	IS : menerima inputan n dan t, kemudian setiap n dijadikan maksimal jumlah anggota himpunan A dan B, kemudian menampilkan irisan dari kedua himpunan tersebut
-	FS : menampilkan irisan dari kedua himpunan tersebut
-}
+// procedure buatIrisan(in n : integer, in/out t : tabelFrekuensi)
+// {
+// 	IS : menerima inputan n dan t, kemudian setiap n dijadikan maksimal jumlah anggota himpunan A dan B, kemudian menampilkan irisan dari kedua himpunan tersebut
+// 	FS : menampilkan irisan dari kedua himpunan tersebut
+// }
 
-kamus
-	x, i: integer
-	A : tabelFrekuensi
+// kamus
+// 	x, i: integer
+// 	A : tabelFrekuensi
 
-algoritma
-	for i <- 0 to n-1 do
-		input(x)
-		A[x] <- A[x] + 1
-	endfor
+// algoritma
+// 	for i <- 0 to n-1 do
+// 		input(x)
+// 		A[x] <- A[x] + 1
+// 	endfor
 
-	output("Masukkan maksimal jumlah anggota himpunan B : ")
-	input(n)
-	for i <- 0 to n-1 do
-		input(x)
-		t[x] <- t[x] + 1
-	endfor
+// 	output("Masukkan maksimal jumlah anggota himpunan B : ")
+// 	input(n)
+// 	for i <- 0 to n-1 do
+// 		input(x)
+// 		t[x] <- t[x] + 1
+// 	endfor
 
-	for i <- 0 to nmax-1 do
-		if A[i] > 0 and B[i] > 0 then
-			t[i] <- t[i] + 1
-		endif
-	endfor
+// 	for i <- 0 to nmax-1 do
+// 		if A[i] > 0 and B[i] > 0 then
+// 			t[i] <- t[i] + 1
+// 		endif
+// 	endfor
 
-	for i <- 0 to nmax-1 do
-		if t[i] > 0 then
-			output(i, " ")
-		endif
-	endfor
+// 	for i <- 0 to nmax-1 do
+// 		if t[i] > 0 then
+// 			output(i, " ")
+// 		endif
+// 	endfor
 
-	output()
+// 	output()
 
-endprocedure
+// endprocedure

@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 
@@ -11,8 +10,8 @@ func soal2() {
 	fmt.Scan(&belanja, &member)
 
 	hasil = cekDiskon(belanja, member)
-	fmt.Print(hasil) // cara 1
-	fmt.Print(cekDiskon(belanja, member)) // cara 2
+	fmt.Print(hasil)
+	fmt.Print(cekDiskon(belanja, member))
 }
 
 func cekDiskon(belanja int, member bool) float64 {

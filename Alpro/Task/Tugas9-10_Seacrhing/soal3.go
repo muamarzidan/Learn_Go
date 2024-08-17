@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 const MAX = 100
 

@@ -1,14 +1,16 @@
 package main
-
 import "fmt"
+
 
 func segitigaSiku(N int, N2 *int) {
 	if *N2 > N {
 		return
 	}
+
 	for j := 1; j <= *N2; j++ {
 		fmt.Print("*", " ")
 	}
+	
 	fmt.Println()
 	*N2++
 	segitigaSiku(N, N2)

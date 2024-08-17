@@ -1,14 +1,16 @@
 package main
-
 import "fmt"
+
 
 func cekFaktor(N int, N2 *int) {
 	if *N2 > N {
 		return
 	}
+
 	if N % *N2 == 0 {
 		fmt.Print(*N2, " ")
 	}
+
 	*N2++
 	cekFaktor(N, N2)
 }
@@ -17,6 +19,7 @@ func soal2() {
 	var N, N2 int
 	N2 = 1
 	fmt.Scanln(&N)
+	
 	cekFaktor(N, &N2)
 	fmt.Println()
 }

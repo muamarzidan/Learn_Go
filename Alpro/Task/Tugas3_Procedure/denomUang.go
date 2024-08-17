@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func soal1() {
 	var uang, hasil, sisa int

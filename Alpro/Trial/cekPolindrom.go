@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var kata string
@@ -21,6 +21,7 @@ func cekKata(kata string) bool {
 	cekBool = kata == hasil
 	return cekBool
 }
+
 
 // PSEUDOCODE
 

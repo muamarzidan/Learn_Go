@@ -1,10 +1,11 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var a, b, c int
 	var hasil string
+	
 	fmt.Scan(&a, &b, &c)
 	hasil = findMax(a, b, c)
 	fmt.Print(hasil)

@@ -1,11 +1,11 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var kar byte
+	
 	fmt.Scanf("%c", &kar)
-	// fmt.Printf(string(lowToUpper(kar)))
 	fmt.Printf("%c", lowToUpper(kar))
 }
 

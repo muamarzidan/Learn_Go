@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func soal4() {
 	var bil1, bil2 int
