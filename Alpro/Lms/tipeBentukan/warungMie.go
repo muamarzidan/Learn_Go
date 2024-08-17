@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 type mie struct {
 	tipe    string
@@ -13,7 +13,6 @@ func main() {
 	var total int
 
 	fmt.Scan(&m.tipe, &m.pedas)
-
 	hitungHarga(m, &total)
 	fmt.Println(total)
 }

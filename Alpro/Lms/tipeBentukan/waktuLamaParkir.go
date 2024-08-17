@@ -1,12 +1,5 @@
 package main
-
 import "fmt"
-
-// Definisikan tipe bentukan untuk menyatakan data waktu dengan komponen jam, menit, dan detik. Setelah itu buatlah program dalam bahasa Go untuk menghitung lama waktu kendaraan parkir.
-
-// Masukan berupa 6 buah bilangan bulat yang menyatakan jam, menit, dan detik saat masuk parkir dan keluar parkir.
-
-// Keluaran berupa 3 buah bilangan bulat yang menyatakan lama waktu parkir dalam jam, menit, dan detik. 
 
 
 func main() {

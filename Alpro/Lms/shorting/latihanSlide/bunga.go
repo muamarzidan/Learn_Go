@@ -1,9 +1,8 @@
 package main
-
 import "fmt"
 
-const nMax = 1000
 
+const nMax = 1000
 type arrayBunga [nMax]string
 
 func main() {
@@ -34,6 +33,7 @@ func mengurutkan(tabBunga *arrayBunga, N int) {
 			}
 			i = i + 1
 		}
+		
 		temp = tabBunga[pass-1]
 		tabBunga[pass-1] = tabBunga[idx]
 		tabBunga[idx] = temp

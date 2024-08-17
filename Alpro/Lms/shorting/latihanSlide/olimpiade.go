@@ -1,12 +1,10 @@
 package main
-
 import "fmt"
 
 type peserta struct {
 	nama string
 	g, s, b int
 }
-
 type olimpiade [100]peserta
 
 func main() {
@@ -49,6 +47,7 @@ func sorting(t *olimpiade, n int) {
 			}
 			i = i + 1
 		}
+
 		temp = t[pass-1]
 		t[pass-1] = t[idx]
 		t[idx] = temp

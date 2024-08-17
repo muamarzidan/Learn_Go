@@ -1,9 +1,8 @@
 package main
-
 import "fmt"
 
-const nMax = 37
 
+const nMax = 37
 type tHimpunan struct {
 	anggota [nMax]int
 	panjang int
@@ -12,7 +11,8 @@ type tHimpunan struct {
 func main() {
 	var himp1, himp2 tHimpunan
 	var n int 
-	fmt.Println("Masukkan batas jumlah anggota himpunan maksimal:")
+	fmt.Println("Masukkan batas jumlah anggota himpunan maksimal : ")
+
 	fmt.Scan(&n)
 	bacaMasukan(&himp1, n)
 	bacaMasukan(&himp2, n)
@@ -44,6 +44,7 @@ func ada(set tHimpunan, x int) bool {
 			return true
 		}
 	}
+
 	return false
 }
 
@@ -56,6 +57,7 @@ func urut(set *tHimpunan) {
 				idx = i
 			}
 		}
+
 		temp = set.anggota[pass]
 		set.anggota[pass] = set.anggota[idx]
 		set.anggota[idx] = temp
@@ -71,6 +73,7 @@ func sama(set1, set2 tHimpunan) bool {
 			return false
 		}
 	}
+	
 	return true
 }
 

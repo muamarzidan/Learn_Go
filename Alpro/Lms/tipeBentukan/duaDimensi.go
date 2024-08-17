@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 type titik struct {
@@ -27,6 +26,5 @@ func main() {
 }
 
 func pembuatan_titik_baru(x, y float64, w string) titik {
-	/* Mengembalikan sebuah titik dengan koordinat x dan y, serta warna w */
 	return titik{x, y, w}
 }

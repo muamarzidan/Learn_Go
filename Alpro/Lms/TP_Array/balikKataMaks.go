@@ -1,14 +1,14 @@
 package main
-
 import "fmt"
 
-const NMAX int = 20
 
+const NMAX int = 20
 type tabChar [NMAX]byte
 
 func main() {
     var kata tabChar
     var nChar int
+
     fmt.Scan(&nChar)
     baca(&kata, &nChar)
     cetak(kata, nChar)
@@ -16,6 +16,7 @@ func main() {
 
 func baca(k *tabChar, n *int) {
     var input string
+    
     fmt.Scan(&input)
     if *n > NMAX {
         *n = NMAX

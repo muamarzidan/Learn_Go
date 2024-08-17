@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 func main() {
 	var r, s, ll, lp, kl, kp, tl, tp float64
@@ -9,6 +9,7 @@ func main() {
 	if r != 0 && s != 0 {
 		fmt.Printf("%7s %7s %7s %7s %7s %7s %7s %7s\n", "R", "S", "LL", "LP", "KL", "KP", "TL", "TP")
 	}
+	
 	for r != 0 && s != 0 {
 		hitungLuasKelilingLingkaran(r, &ll, &kl)
 		hitungLuasKelilingPersegi(s, &lp, &kp)

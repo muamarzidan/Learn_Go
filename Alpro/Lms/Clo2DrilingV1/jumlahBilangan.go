@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 const NMax = 1000
@@ -22,6 +21,7 @@ func main() {
 
 func jumlahBilangan(bilangan []int) int {
 	var jumlah int
+
 	for i := 0; i < len(bilangan); i++ {
 		if bilangan[i] > 0 {
 			jumlah += bilangan[i]
@@ -29,5 +29,6 @@ func jumlahBilangan(bilangan []int) int {
 			jumlah = jumlah
 		}
 	}
+	
 	return jumlah
 }

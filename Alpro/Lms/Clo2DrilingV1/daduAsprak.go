@@ -1,6 +1,6 @@
 package main 
-
 import "fmt"
+
 
 type SkorGame struct {
 	TotalA   int
@@ -9,11 +9,10 @@ type SkorGame struct {
 	max      int
 	Pemenang byte
 }
-
 var skor SkorGame
 
 func isGanjil(n int) bool {
-	return n%2 != 0
+	return n % 2 != 0
 }
 
 func maxSkor() {
@@ -43,11 +42,13 @@ func gameDadu(n int) {
 			skor.TotalC += d3
 		}
 	}
+
 	maxSkor()
 }
 
 func main() {
 	var n int
+	
 	fmt.Scan(&n)
 	gameDadu(n)
 	fmt.Printf("%c %d\n", skor.Pemenang, skor.max)

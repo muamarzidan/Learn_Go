@@ -1,6 +1,6 @@
 package main
-
 import "fmt"	
+
 
 const nMax int = 100
 type dataMobil [nMax]string
@@ -12,8 +12,6 @@ func main() {
 }
 
 func isiData(arrMobil *dataMobil) {
-	/*I.S. Terdefinisi nilai array dataMobil yang masih kosong
-    F.S. arrMobil berisi data yang diinputkan*/
 	var i int
 	for i = 0; i < nMax; i++ {
 		fmt.Scanln(&arrMobil[i])
@@ -25,12 +23,10 @@ func isiData(arrMobil *dataMobil) {
 }
 
 func hitung(arrMobil dataMobil) string {
-	/*Mengembalikan string warna mobil tertentu yang paling banyak
-    melintasi jalan*/
 	var n, nMerah, nHitam, nAbu int
 	var terbanyak string
 
-	n = len(arrMobil) // menentukan panjang dari arrMobil
+	n = len(arrMobil)
 	for i := 0; i < n; i++ {
 		if arrMobil[i] == "merah" {
 			nMerah++

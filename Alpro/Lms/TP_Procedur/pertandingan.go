@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 
@@ -7,7 +6,6 @@ func main() {
 	var N, g, k, jk,jm, jd, jg, jkg, jsg, jp int
 
 	fmt.Scan(&N)
-
 	for i := 0; i < N; i++ {
 		fmt.Scan(&g, &k)
 		hitungMenang(g, k, &jm)

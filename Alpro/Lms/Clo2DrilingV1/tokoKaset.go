@@ -1,5 +1,4 @@
 package main
-
 import "fmt"
 
 type KasetGame struct {
@@ -10,7 +9,6 @@ type KasetGame struct {
 }
 
 const nmax int = 3
-
 type tGameKaset [nmax]KasetGame
 
 func main() {

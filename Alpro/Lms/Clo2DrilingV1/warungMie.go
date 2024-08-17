@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 type mie struct {
 	tipe    string

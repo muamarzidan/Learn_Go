@@ -1,6 +1,6 @@
 package main
-
 import "fmt"
+
 
 type kendaraan struct {
 	jenis  string
